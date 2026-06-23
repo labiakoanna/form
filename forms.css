@@ -1,0 +1,67 @@
+
+
+body{
+    background-color: navy;
+    font-size: 1.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+.container{
+    background-color: rgb(55, 55, 211, 0.8);
+    box-shadow: 2px 3px 3px rgb(197, 104, 104, 0.6);
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px
+
+}
+
+.feedback, p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.details, #radio, .checkbox-option, .select, .textarea, .submit{
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+legend{
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.details input:invalid, .textarea:invalid, #options{
+    border-color: red;
+}
+.details input:valid, .textarea:valid{
+    border-color: green;
+}
+.details input:placeholder-shown:invalid, .textarea:placeholder-shown:invalid{
+    border-color:black;
+}
+.details{
+    box-sizing: border-box;
+    min-width: 0px;
+    width: 100%
+}
+.textarea{
+    width: 90%;
+    height: 100px;
+    resize: vertical;
+
+}
+.submit{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 60%
+}
+.button .submit:hover{
+    background-color: grey;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#options{
+    width: 50%
+}

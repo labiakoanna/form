@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub Feedback Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+    <form action="#" method="POST">
+        <h1 class="feedback">MY Feedback Forms</h1>
+    <p>please find the below form and fill it to give us your honest reviews about your stay at lab's tech hub</p>
+    <!--personal details-->
+<div id="details">
+        <fieldset class="details">
+            <legend>Put your details here</legend>
+            <label for="name">First-Name:</label>
+            <input type="text" id="name"  name="first-name" required placeholder="don" minlength="3">
+
+            <label for="name_2">Second-Name:</label>
+            <input type="text" id="name_2"  name="second-name" required placeholder="moen" minlength="3"/>
+
+            <label for="age">age(recommended):</label>
+            <input type="number" id="age" value="number" name="age"required placeholder="2" min="12"/>
+        </fieldset>
+        </div>
+<!--radio-buttons-->
+        <div class="radio-option">
+        <fieldset id="radio">
+            <legend>Did you love stay here</legend>
+            <label for="yes_option" >yes</label>
+            <input checked type="radio" id="yes_option" value="radio" name="radio"/>
+
+            <label for="no_option">no</label>
+            <input type="radio" id="no_option" value="radio" name="radio"/>
+
+            <label for="not_sure_option">not_sure</label>
+            <input type="radio" id="not_sure_option" value="radio" name="radio"/>
+        </fieldset>
+        </div>
+<!--checkboxes-->
+        <div class="checkbox">
+        <fieldset class="checkbox-option">
+            <legend>what were your favorite activities at the hub</legend>
+            <label for="coding">coding</label>
+            <input type="checkbox"  id="coding" value="codes" name="coding" checked/>
+
+            <label for="debug">debugging</label>
+            <input type="checkbox"  id="debug" value="bugs" name="debugging"/>
+
+            <label for="program">Programming</label>
+            <input type="checkbox" id="program" value="programs" name="Programming"/>
+
+            <label for="engineer">Engineering</label>
+            <input type="checkbox" id="engineer" value="engineers" name="engineering"/>
+        </fieldset>
+        </div>
+<!--selection-->
+        <div class="select-option">
+        <fieldset class="select">
+            <legend>how would you rate your experience at the hub</legend>
+            <select id="options" name="ratings">
+            <option value="fair">Fair</option>
+            <option value="good">Good</option>
+            <option value="very good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+            </select>
+        </fieldset>
+        </div>
+<!--textarea-->
+        <div class="message">
+        <textarea  name="comment" class="textarea" required placeholder="comment here..." minlength="10"></textarea>
+        <br>
+        </div>
+<!--buttton-->
+        <div class="button">
+        <button class="submit">Submit Form</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
