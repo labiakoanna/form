@@ -41,9 +41,14 @@ legend{
     border-color:black;
 }
 .details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     box-sizing: border-box;
     min-width: 0px;
     width: 100%
+
+    
 }
 .textarea{
     width: 90%;
@@ -65,3 +70,78 @@ legend{
 #options{
     width: 50%
 }
+input[type="checkbox"]{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position:absolute;
+}
+.one{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #7fff0f;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + .one{
+    background-color: #5e50f1;
+    border-color: #5e50f1;
+}
+input[type="checkbox"]:checked + .one::after{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 10px;
+    border-right: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    transform: rotate(45deg);
+}
+input[type="checkbox"]:focus + .one{
+    outline: 2px solid rgb(7, 7, 71);
+    outline-offset: 2px;
+}
+/*input button designs*/
+input[type="radio"]{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position:absolute;
+}
+.two{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #7fff0f;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+input[type="radio"]:checked + .two{
+    background-color: #5e50f1;
+    border-color: #5e50f1;
+}
+input[type="radio"]:checked + .two::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #5e50f1;
+}
+
+input[type="radio"]:focus + .two{
+    outline: 2px solid rgb(7, 7, 71);
+    outline-offset: 2px;
+}
+.wrap + input[type="radio"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+    
